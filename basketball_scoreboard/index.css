@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Digital Display';
+    src: url('https://praxeds.github.io/scrimba-basketball-scoreboard/Assets/Digital-Display.woff2') format('woff2'),
+        url('https://praxeds.github.io/basketball-scoreboard/Assets/Digital-Display.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    background-image: url(basketball.jpg);
+
+    background-color: rgb(109, 109, 109);
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+*{
+    color: white;
+}
+
+.container {
+    max-width: 300pt;
+    min-width: 300pt;
+
+    margin: auto;
+
+    margin-top: 50pt;
+
+    background-color: rgb(0, 34, 255);
+
+    padding: 10pt;
+
+    border: 10pt solid white;
+
+    border-radius: 25pt;
+    
+}
+
+.team-container {
+    min-width: 100pt;
+
+    text-align: center;
+}
+
+.score-dispay-container {
+    margin: 20pt;
+    position: relative;
+    padding-top: 10pt;
+    padding-bottom: 10pt;
+    background-color: rgb(56, 56, 56);
+}
+
+
+
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 
+
+
+
+
+.score-display-shadow {
+    font-family: 'Digital Display',monospace;
+    font-size: 60pt;
+
+    color: rgb(30, 30, 30);
+
+    position: absolute;
+
+    left: 12%;
+
+    z-index: 1;
+
+    margin: 0;
+}
+
+.score-dispay {
+    font-family: 'Digital Display',monospace;
+    font-size: 60pt;
+    text-align: right;
+
+    position: relative;
+
+    left: -9%;
+
+    z-index: 2;
+
+    margin: 0;
+
+    color: yellow;
+}
+
+.add-score-button {
+    padding: 5pt;
+    border-radius: 5pt;
+    border: 2pt solid white;
+    background-color: blue;
+}
+
+button:hover {
+    background-color: red;
+}
