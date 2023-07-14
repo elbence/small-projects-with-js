@@ -1,0 +1,109 @@
+/* ----------------------------------------------------------- */
+/* FONTS */
+/* ----------------------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap");
+
+
+/* ----------------------------------------------------------- */
+/* PROPERTIES */
+/* ----------------------------------------------------------- */
+:root {
+  --clr-bright-green: #55f991;
+  --clr-dark-green: #10b981;
+  --clr-darker-green: #099969;
+
+  --clr-very-dark-blue: #1f2937;
+  --clr-dark-blue: #273549;
+  --clr-medium-grey: #d5d4d8;
+
+  --ff-main: "Karla", sans-serif;
+  --ff-serif: "Inter", sans-serif;
+}
+
+/* ----------------------------------------------------------- */
+/* STYLES */
+/* ----------------------------------------------------------- */
+
+* {
+    font-family: var(--ff-main), 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--clr-dark-green);
+}
+
+.container {
+    min-width: 280pt;
+    background-color: var(--clr-very-dark-blue);
+    border-radius: 20pt;
+    border: 5pt solid white;
+    margin-top: 50pt;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--clr-medium-grey);
+    width: fit-content;
+}
+
+.inside-spacer {
+    width: fit-content;
+    margin: 25pt;
+}
+
+.title {
+    font-family: var(--ff-main);
+}
+
+.subtitle {
+    font-family: var(--ff-serif);
+}
+
+.colored-green {
+    color: var(--clr-dark-green);
+}
+
+#generate-passwords-btn {
+    background-color: var(--clr-dark-green);
+    font-family: var(--ff-serif);
+    font-weight: normal;
+    font-size: 10pt;
+    border: none;
+    padding: 5pt;
+    border-radius: 3pt;
+    color: white;
+}
+
+#generate-passwords-btn:hover {
+    background-color: var(--clr-darker-green);
+    color: rgb(209, 209, 209);
+}
+
+.separator {
+    border: 1pt solid var(--clr-dark-blue);
+}
+
+.password-holder {
+    background-color: var(--clr-dark-blue);
+    padding: 4pt;
+    border-radius: 3pt;
+    color: var(--clr-very-dark-blue);
+    border: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.margin-left {
+    margin-left: 6pt;
+}
+
+.margin-right {
+    margin-right: 6pt;
+}
+
+.margin-top {
+    margin-top: 6pt;
+}
+
+.margin-bottom {
+    margin-bottom: 6pt;
+}
