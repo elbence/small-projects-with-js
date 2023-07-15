@@ -90,6 +90,7 @@ body {
     border: none;
     text-align: center;
     font-weight: bold;
+    pointer-events: none;
 }
 
 .margin-left {
@@ -106,4 +107,9 @@ body {
 
 .margin-bottom {
     margin-bottom: 6pt;
+}
+
+.password-txt {
+    color: var(--clr-bright-green);
+    font-weight: normal;
 }
