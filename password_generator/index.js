@@ -10,6 +10,9 @@ let passwordHolderTxt2 = document.getElementById("password-el-2-txt")
 let passwordHolderTxt3 = document.getElementById("password-el-3-txt")
 let passwordHolderTxt4 = document.getElementById("password-el-4-txt")
 
+let lengthSlider = document.getElementById("password-length-slider");
+let lengthTxt = document.getElementById("password-length-txt");
+
 let possibleLetters = "abcdefghijklmnopqrstuvwxyz"
 let possibleCaps = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 let possibleNumbers = "1234567890"
@@ -20,7 +23,7 @@ let possibleElements = [possibleLetters, possibleCaps, possibleNumbers, possible
 let passwords = ["···", "···", "···", "···"]
 let passwordsSet = false
 
-let passwordLength = 7
+let passwordLength = 8
 
 // ---------------------------------------------------------------------------------------
 // GENERATE PASSWORDS
@@ -111,3 +114,16 @@ passwordHolderBtn4.addEventListener("click", function() { // TODO
         }
     }
 })
+
+// ---------------------------------------------------------------------------------------
+// SLIDER FOR PASSWORD LENGTH
+// ---------------------------------------------------------------------------------------
+
+lengthTxt.textContent = passwordLength
+lengthSlider.value = passwordLength
+
+// Update the current slider value (each time you drag the slider handle)
+lengthSlider.oninput = function() {
+    passwordLength = this.value;
+    lengthTxt.textContent = passwordLength;
+}

@@ -34,7 +34,7 @@ body {
 }
 
 .container {
-    min-width: 280pt;
+    min-width: 355pt;
     background-color: var(--clr-very-dark-blue);
     border-radius: 20pt;
     border: 5pt solid white;
@@ -52,6 +52,7 @@ body {
 
 .title {
     font-family: var(--ff-main);
+    color: white;
 }
 
 .subtitle {
@@ -89,7 +90,10 @@ body {
     color: var(--clr-very-dark-blue);
     border: none;
     text-align: center;
-    font-weight: bold;
+
+    font-family: var(--ff-serif);
+    font-weight: 100;
+    
     pointer-events: none;
 }
 
@@ -111,5 +115,56 @@ body {
 
 .password-txt {
     color: var(--clr-bright-green);
-    font-weight: normal;
+    font-family: var(--ff-serif);
+    font-weight: 100;
+}
+
+.slidecontainer {
+    margin-bottom: 10pt;
+}
+
+.slidertxt {
+    display: inline-block;
+    width: 115pt;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    
+    width: 100pt;
+    height: 10pt;
+    border-radius: 5pt;
+
+    background: var(--clr-dark-blue);
+
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 10pt;
+    height: 10pt;
+    border-radius: 50%; 
+
+    background: var(--clr-dark-green);
+    cursor: pointer;
+}
+  
+.slider::-moz-range-thumb {
+    width: 10pt;
+    height: 10pt;
+    border-radius: 50%;
+
+    background: var(--clr-dark-green);
+    cursor: pointer;
 }
