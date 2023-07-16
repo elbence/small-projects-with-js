@@ -63,57 +63,16 @@ function displayPasswords() {
 // COPY PASSWORD TO CLIPBOARD ON CLICK
 // ---------------------------------------------------------------------------------------
 
-passwordHolderBtn1.addEventListener("click", function() { // TODO
-    if (passwordsSet){
-        async () => {
-            try {
-                await navigator.clipboard.writeText(passwords[0]);
-                console.log("Copy password 1 ok");
-            } catch (err) {
-                console.error("Failed to copy pswd 1: ", err);
-            }
-        }
-    }
-})
+passwordHolderBtn1.addEventListener("click", () => {copyToClipboard(0)})
+passwordHolderBtn2.addEventListener("click", () => {copyToClipboard(1)})
+passwordHolderBtn3.addEventListener("click", () => {copyToClipboard(2)})
+passwordHolderBtn4.addEventListener("click", () => {copyToClipboard(3)})
 
-passwordHolderBtn2.addEventListener("click", function() { // TODO
+function copyToClipboard(index) {
     if (passwordsSet){
-        async () => {
-            try {
-                await navigator.clipboard.writeText(passwords[1]);
-                console.log("Copy password 2 ok");
-            } catch (err) {
-                console.error("Failed to copy pswd 2: ", err);
-            }
-        }
+        navigator.clipboard.writeText(passwords[index]).then(() => {alert("Copied to clipboard")})
     }
-})
-
-passwordHolderBtn3.addEventListener("click", function() { // TODO
-    if (passwordsSet){
-        async () => {
-            try {
-                await navigator.clipboard.writeText(passwords[2]);
-                console.log("Copy password 3 ok");
-            } catch (err) {
-                console.error("Failed to copy pswd 3: ", err);
-            }
-        }
-    }
-})
-
-passwordHolderBtn4.addEventListener("click", function() { // TODO
-    if (passwordsSet){
-        async () => {
-            try {
-                await navigator.clipboard.writeText(passwords[3]);
-                console.log("Copy password 4 ok");
-            } catch (err) {
-                console.error("Failed to copy pswd 4: ", err);
-            }
-        }
-    }
-})
+}
 
 // ---------------------------------------------------------------------------------------
 // SLIDER FOR PASSWORD LENGTH
@@ -122,7 +81,6 @@ passwordHolderBtn4.addEventListener("click", function() { // TODO
 lengthTxt.textContent = passwordLength
 lengthSlider.value = passwordLength
 
-// Update the current slider value (each time you drag the slider handle)
 lengthSlider.oninput = function() {
     passwordLength = this.value;
     lengthTxt.textContent = passwordLength;
