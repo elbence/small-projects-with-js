@@ -5,11 +5,18 @@
 
 html, body {
     margin: 0px;
+    background-color: black;
 }
 
 div {
     width: 100%;
     overflow: hidden;
+}
+
+#container {
+    max-width: 350pt;
+    padding: 40pt;
+    margin: auto;
 }
 
 #cont-1 {
@@ -33,4 +40,26 @@ div {
 #cont-2 {
     background-color: #1f2937;
     color: white;
+}
+
+h1 {
+    font-weight:700;
+    font-size: 60pt;
+    margin: 10pt;
+    margin-bottom: 18pt;
+}
+
+h2 {
+    margin-bottom: 0;
+    margin-top: 35pt;
+    font-size: 15pt;
+}
+
+#title-line {
+    padding-top: 15pt;
+    font-weight: bold;
+}
+
+#info-line {
+    color: rgb(148, 148, 148);
 }
