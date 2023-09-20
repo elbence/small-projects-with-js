@@ -13,13 +13,14 @@ div {
     overflow: hidden;
 }
 
-#container {
-    max-width: 350pt;
+.container {
+    min-width: 350pt;
+    width: fit-content;
     padding: 40pt;
     margin: auto;
 }
 
-#cont-1 {
+.cont-1 {
     background-color: aquamarine;
     background-image: linear-gradient(
         45deg,
@@ -37,16 +38,30 @@ div {
     color: white;
 }
 
-#cont-2 {
+.cont-2 {
     background-color: #1f2937;
     color: white;
 }
 
-h1 {
+#num-el {
     font-weight:700;
     font-size: 60pt;
     margin: 10pt;
     margin-bottom: 18pt;
+    border: none;
+    background: none;
+    color: white;
+    width: 350pt;
+}
+
+#num-el::-webkit-outer-spin-button,
+#num-el::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#num-el:focus {
+    outline: none;
 }
 
 h2 {
@@ -55,11 +70,13 @@ h2 {
     font-size: 15pt;
 }
 
-#title-line {
+.title-line {
     padding-top: 15pt;
     font-weight: bold;
 }
 
-#info-line {
+.info-line {
     color: rgb(148, 148, 148);
+    padding-left: 40pt;
+    padding-right: 40pt;
 }
