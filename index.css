@@ -1,31 +1,111 @@
+:root {
+    --grey-blue: rgb(98, 117, 156);
+    --clear-green: rgb(234, 241, 236);
+    --grey-dead-blue: rgb(84, 99, 128);
+    --orange: #d44500;
+}
+
+/*------------------------------------------------------------------*/
+
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-html {
+html, body {
     height: 100%;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.367);
+
+    display: flex;
+    flex-direction: column;
 }
 
-body {
-    background: rgb(2,0,36);
-    background: linear-gradient(315deg, rgba(2,0,36,1) 0%, rgba(0,0,103,1) 18%, rgba(0,212,255,1) 88%);
+body > * {
+    flex-shrink: 0;
+}
+
+.last-p {
+    flex-grow: 1;
+}
+
+/*------------------------------------------------------------------*/
+
+p, span, li {
+    padding: 0 25pt;
+}
+
+a {
+    color: var(--orange);
+}
+
+.white-back {
+    background-color: white;
+}
+
+.green-back {
+    background-color: var(--clear-green);
+}
+
+.generic-p-spacing {
+    padding: 15pt 0;
+}
+
+.generic-section-title {
+    font-weight: 600;
+    font-size: 12pt;
+    text-decoration: underline;
+    color: var(--grey-dead-blue);
+}
+
+/*------------------------------------------------------------------*/
+
+.header {
+    background-image: url(header_back.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.525);
+
+    min-height: 150pt;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
-div.container {
-    background-color: #49dddd;
-    background-color: rgba(101, 232, 237, 0.557);
-    padding: 10pt 40pt;
-    border-radius: 20pt;
+.header-name {
+    color: white;
+    font-size: 20pt;
+    font-weight: 600;
 }
 
-h2 {
-    font-size: large;
-    color: rgb(73, 73, 73);
+.header-bar {
+    margin-top: 4pt;
+    width: 150pt;
+    background-color: var(--grey-blue);
+    min-height: 5pt;
 }
 
-ul {
-    padding-left: 0pt;
-    margin-bottom: 4pt;
-    margin-left: 0pt;
+/*------------------------------------------------------------------*/
+
+.first-p {
+    text-align: center;
+}
+
+.first-p-title {
+    font-weight: 600;
+    font-size: 15pt;
+    color: var(--grey-dead-blue);
+}
+
+li {
+    list-style-type: disc;
+    padding-left: 45pt;
+}
+
+/*------------------------------------------------------------------*/
+
+.footer {
+    text-align: center;    
 }
