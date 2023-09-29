@@ -1,0 +1,112 @@
+:root {
+    --background: #EEF0F4;
+    --font-color: #432000;
+    --input-bck: #DCE1EB;
+    --button-bck: #AC485A;
+    --button-text: #FDFDFD;
+    --list-el-bck: #FFFDF8;
+    --list-el-hover: #FFECC7;
+    --list-el-text: #6f4638;
+}
+
+.dark-mode {
+    --background: #232931;
+    --font-color: #c1c1c1;
+    --input-bck: #464646;
+    --button-bck: #D65A31;
+    --button-text: #FDFDFD;
+    --list-el-bck: #FFFDF8;
+    --list-el-hover: #4ECCA3;
+    --list-el-text: #6f4638;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+    height: 100%;
+    
+}
+
+.main-div {
+    background-color: var(--background);
+    color: var(--font-color);
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+img {
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+input {
+    color: var(--font-color);
+    background-color: var(--input-bck);
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0;
+}
+
+button {
+    color: var(--button-text);
+    background-color: var(--button-bck);
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+    background-color: var(--font-color);
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+ul li {
+    font-size: 20px;
+    background-color: var(--list-el-bck);
+    padding: 15px;
+    border-radius: 8px;
+    flex-grow: 1;
+    text-align: center;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    color: var(--list-el-text);
+}
+
+ul li:hover {
+    background-color: var(--list-el-hover);
+    cursor: pointer;
+}
+
+button#toggle-theme {
+    background-color: var(--input-bck);
+    padding: 7px 5px;
+    border-radius: 100%;
+    margin: 10px;
+    position: relative;
+    align-self:flex-end;
+    text-align: center;
+}
