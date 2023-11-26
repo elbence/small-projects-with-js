@@ -7,6 +7,33 @@
 
 html {zoom: 120%;}
 
+.maintenance-container {
+    display:unset;
+    position: fixed;
+    border: solid 1px #ddd;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 5pt 0pt;
+
+
+    background: repeating-linear-gradient(
+        45deg,
+        #dee90f,
+        #dee90f 10px,
+        #000000 10px,
+        #000000 20px
+    );
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.maintenance-text {
+    background-color: #000000;
+    padding: 3pt;
+}
+
 /*------------------------------------------------------------------*/
 
 * {
